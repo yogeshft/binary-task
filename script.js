@@ -70,7 +70,6 @@ function setClass(els, className, fnName) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
 
 
 var acc = document.getElementsByClassName("accordion");
@@ -95,4 +94,3 @@ function setClass(els, className, fnName) {
     }
 }
 
-});
