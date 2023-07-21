@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left-bar">
+      </div>
+      <div class="menuBtn"><i class="fa-solid fa-bars"></i></div>
+      <i class="fa-solid fa-bars hidden"></i>
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+  
+  
+  
+      <ul class="navUl">
+        <li class="navItem">
+          Shop by concern <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="navItem">
+          Shop by products <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="navItem">
+          Shop by ingredients <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="navItem">
+          Explore HempCann <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="navItem">Knowledge center</li>
+        <li class="navItem">Reviews</li>
+        <li class="navItem">
+          <button class="dc">Doctor Consultation</button>
+        </li>
+      </ul>
+  
+      <ul class="btnUl">
+        <li class="btnItem">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="btnItem">
+          <i class="fa-regular fa-user"></i>
+        </li>
+        <li class="btnItem">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </li>
+        <li class="btnItem">
+          <i class="fa-solid fa-truck"></i>
+        </li>
+      </ul>
+  
+    </nav>
+    <main>
+      <section class="sec1">
+        <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+            <img style="width: 100%;" src="images/bac.png">
+          </div>
+  
+          <div class="mySlides fade">
+            <img style="width: 100%;" src="images/merabharatmahan.jpg">
+          </div>
+  
+          <div class="mySlides fade">
+            <img style="width: 100%;" src="images/bac.png">
+          </div>
+  
+  
+        </div>
+        <br>
+  
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+
+      <!-- <section class="sec2">
+        <img class="sec2Bg1" src="./images/Mask Group 199.png" alt="" />
+        <img class="sec2Bg2" src="./images/Group 7264.svg" alt="" />
+        <div class="symContainer">
+          <div class="symItem">
+            <img src="./images/Group 7276.svg" alt="" />
+            <p>100% Natural</p>
+          </div>
+          <div class="symItem">
+            <img src="./images/Group 7276.svg" alt="" />
+            <p>No Harsh Ingredients</p>
+          </div>
+          <div class="symItem">
+            <img src="./images/Group 6946.svg" alt="" />
+            <p>Ayuvedic Roots</p>
+          </div>
+          <div class="symItem">
+            <img src="./images/Group 6947.svg" alt="" />
+            <p>Quality Check</p>
+          </div>
+          <div class="symItem">
+            <img src="./images/Group 17491.svg" alt="" />
+            <p>Eco Friendly</p>
+          </div>
+          <div class="symItem">
+            <img src="./images/Group 17699.svg" alt="" />
+            <p>Sustainable</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="sec3">
+        <h1 class="sec3Heading">CHOOSE YOUR PRODUCT</h1>
+        <ul class="productCat">
+          <li class="productCatItem">Best Seller</li>
+          <li class="productCatItem">Authectic Ayuveda</li>
+          <li class="productCatItem">Immunity Booster</li>
+          <li class="productCatItem">Bath & Body</li>
+        </ul>
+        <div class="productCardCont">
+          <div class="productCard">
+            <div class="cardHeader">
+              <img src="./images/Group 13531.png" alt="" />
+              <p class="cardTag1">20% OFF</p>
+              <p class="cardTag2"><i class="fa-regular fa-heart"></i></p>
+            </div>
+            <h2 class="productTitle">CANNAFLAM® OIL (30 ML)</h2>
+            <p class="productInfo">
+              Reduces Inflammation, Invigorates Bowel Health
+            </p>
+            <p class="productReview">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>45 Review</span>
+            </p>
+            <div class="cardFooter">
+              <p class="productPrice">₹ 3900.00 <del>₹5000.00</del></p>
+              <button class="viewDetailBtn">View Details</button>
+            </div>
+          </div>
+
+          <div class="productCard">
+            <div class="cardHeader">
+              <img src="./images/Group 13531.png" alt="" />
+              <p class="cardTag1">20% OFF</p>
+              <p class="cardTag2"><i class="fa-regular fa-heart"></i></p>
+            </div>
+            <h2 class="productTitle">TRIPHALA EXTRACT TABLET (90 TABLETS)</h2>
+            <p class="productInfo">
+              Reduces Inflammation, Invigorates Bowel Health
+            </p>
+            <p class="productReview">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>45 Review</span>
+            </p>
+            <div class="cardFooter">
+              <p class="productPrice">₹ 3900.00 <del>₹5000.00</del></p>
+              <button class="viewDetailBtn">View Details</button>
+            </div>
+          </div>
+
+          <div class="productCard">
+            <div class="cardHeader">
+              <img src="./images/Group 13531.png" alt="" />
+              <p class="cardTag1">20% OFF</p>
+              <p class="cardTag2"><i class="fa-regular fa-heart"></i></p>
+            </div>
+            <h2 class="productTitle">HARIDRAKHAND (150G)</h2>
+            <p class="productInfo">
+              Reduces Inflammation, Invigorates Bowel Health
+            </p>
+            <p class="productReview">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>45 Review</span>
+            </p>
+            <div class="cardFooter">
+              <p class="productPrice">₹ 3900.00 <del>₹5000.00</del></p>
+              <button class="viewDetailBtn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="viewAllBtn">
+          <button>View All</button>
+        </div>
+      </section>
+
+<!-- 
+  expand and collapse
+ -->
+ <!-- <div class="container">
+  <div class="img-div">
+      <img
+          src="./images/Rectangle 4995.png" >
+  </div>
+  <div class="side-div">
+
+      <h3>WHAT YOU NEED TO KNOW CANNABIS?</h3>
+
+      <p class="accordion">Q1. What currency is the course charged in?</p>
+      <div class="panel">A. The course is charged in Australian
+          dollars.</div>
+
+      <p class="accordion">Q2. What if the course doesn’t help me?</p>
+      <div class="panel">A. If it doesn't help you I'll refund the
+          purchase
+          price in full.</div>
+
+      <p class="accordion">Q3. When will the webinars take place?</p>
+      <div class="panel">A. Depending on the mix of countries and time
+          zones
+          for people attending the webinars, I will pick a time that
+          works
+          best for most participants. All webinars will be recorded so
+          you
+          can
+          listen to them again. The private Facebook group will
+          obviously
+          be
+          available 24/7 and I’ll be monitoring and contributing to
+          the
+          discussion regularly.</div>
+
+      <p class="accordion">Q4. What is the self-directed mentoring
+          program?</p>
+      <div class="panel">A. The self-directed mentoring program is
+          designed to
+          help you set-up and run an effective mentee-mentor
+          relationship
+          as
+          part of the course.</div>
+
+  </div>
+</div> -->
+<div class="container">
+  <div class="img-div">
+    <img src="./images/Rectangle 4995.png">
+  </div>
+  <div class="side-div">
+    <h3>WHAT YOU NEED TO KNOW CANNABIS?</h3>
+
+    <p class="accordion">Q1. What currency is the course charged in?</p>
+    <div class="panel">A. The course is charged in Australian dollars.</div>
+
+    <p class="accordion">Q2. What if the course doesn’t help me?</p>
+    <div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+
+    <p class="accordion">Q3. When will the webinars take place?</p>
+    <div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+
+    <p class="accordion">Q4. What is the self-directed mentoring program?</p>
+    <div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="footerAbove">
+        <h1 class="footerHeading">BY CONCERN</h1>
+        <p>
+          Anorexia l Allergies l Anti-Aging l Anxiety & Depression l Appetite l
+          Bloating l Blood Pressure l Blood Sugar l Chemo Side-Effects l
+          Cholestrol l Cold & Cough l Constipation l Detox Diarrehea l Diabetes
+          l Digestive Health l Dysentery l Heart Health l Hypertension l Immune
+          Support l Insomnia l Irritable Bowel Syndrome (IBS) l Joint Pain l
+          Libido l Memory Mood l Motion Sickness l Neuro-Degenerative Disease l
+          Sexual Problem l Skin Disease l Post Delivery Complications l
+          Psoriasis l Sciatica Pain l Sleep l Stress l Urinary Tract Infection l
+          Viral Infections l Weight Management l Women's Health
+        </p>
+      </div>
+      <div class="footerBottom">
+        <div class="footerLinks">
+          <div>
+            <h2>PRODUCT CATAGEORY</h2>
+            <ul>
+              <li>Cannabis Infused Medicines</li>
+              <li>Dietary Supplements</li>
+              <li>Authentic Ayurveda</li>
+              <li>Immunity Boosters</li>
+              <li>Bath & Body</li>
+              <li>Best Seller</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>CUSTOMER SUPPORT</h2>
+            <ul>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Shipping & Returns</li>
+              <li>Blogs</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>KNOW US</h2>
+            <ul>
+              <li>Our story</li>
+              <li>About HempCann</li>
+              <li>Ethos</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+            <input
+              class="newsletterInput"
+              type="text"
+              placeholder="Email Address"
+            />
+            <button class="newsletterBtn">SIGN UP</button>
+            <div class="socails">
+              <img
+                src="./images/104458_facebook_social media_fb_social_icon.svg"
+                alt=""
+              />
+              <img
+                src="./images/5279123_tweet_twitter_twitter logo_icon.svg"
+                alt=""
+              />
+              <img
+                src="./images/5279112_camera_instagram_social media_instagram logo_icon.svg"
+                alt=""
+              />
+            </div>
+
+            <h2>CONTACT US</h2>
+            <ul>
+              <li>Office Hours: Mon-Sat, 9am to 6pm</li>
+              <li>Email: namaste@vediherbals.com</li>
+              <li>Call us on: +91-22-48931316</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>© 2023 vedi herbals, all rights reserved</p>
+        <div class="payment">
+          <img src="./images/Image 86.png" alt="" />
+          <img src="./images/Image 87.png" alt="" />
+          <img src="./images/Image 89.png" alt="" />
+          <img src="./images/Image 90.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f543c45c17.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+.menuBtn {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.navUl,
+.btnUl,
+.productCat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden,
+.left-bar {
+    display: none !important;
+}
+
+.btnUl {
+    gap: 20px !important;
+}
+
+.navUl>.navItem {
+    margin-right: 1rem;
+}
+
+.dc {
+    background-color: #4F872E;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hidden {
+        display: block !important;
+    }
+
+    .navUl {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: -1000px;
+        z-index: 1;
+        gap: 1rem;
+        margin: 2rem 0 0 2rem;
+        transition: left 0.3s ease;
+    }
+
+    .left-bar {
+        display: block !important;
+        width: 20rem;
+        height: 90vh;
+        z-index: 1;
+        background-color: white;
+        top: 100px;
+        left: -1000px;
+        position: absolute;
+        transition: left 0.3s ease;
+    }
+}
+
+/* 
+    Section 1 
+*/
+
+.mySlides {
+    display: none
+}
+
+.sec1Bg {
+    height: auto;
+    object-fit: cover;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* 
+    Section 2
+*/
+
+
+.sec2 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.sec2Bg1 {
+    position: absolute;
+    left: -100px;
+    top: -20px;
+}
+
+.sec2Bg2 {
+    height: 200px;
+    position: absolute;
+    right: -50px;
+    bottom: -20px;
+}
+
+.symContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 
+    Section 3
+*/
+
+.sec3 {
+    background-color: #FFFDEE;
+    width: 100%;
+    min-height: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sec3Heading {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.productCat {
+    margin: 20px 0;
+    font-size: 20px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.productCatItem {
+    opacity: 0.8;
+}
+
+.productCatItem:nth-child(1) {
+    text-decoration: underline;
+}
+
+.productCardCont {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productCard {
+    background-color: white;
+    width: 350px;
+}
+
+.cardHeader {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.cardHeader img {
+    width: 100%;
+    height: 100%;
+}
+
+.cardTag1 {
+    position: absolute;
+    background-color: #F4D1A8;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cardTag2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: #F4D1A8;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.productTitle {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.productInfo {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.productReview {
+    margin: 20px 0;
+}
+
+.cardFooter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.viewDetailBtn {
+    color: white;
+    background-color: #4F872E;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.viewAllBtn {
+    margin: 20px 0;
+}
+
+.viewAllBtn button {
+    color: white;
+    background-color: #4F872E;
+    border: none;
+    padding: 10px 40px;
+}
+
+/* 
+    Section 3
+*/
+
+.sec4 {
+    min-height: 400px;
+}
+
+.footerHeading {
+    margin: 10px 0;
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* 
+collapse and expand
+*/
+
+p.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+    border-bottom: 1px solid black;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+.container{
+    display: flex;
+}
+.img-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.side-div{
+    width: 50%;
+    padding: 10%;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+    .img-div, .side-div {
+      width: 100%;
+    }
+    .side-div {
+      padding: 5%;
+    }
+  }
+
+
+
+/* 
+    footer
+*/
+footer {
+    background-color: #FFFDEE;
+}
+
+.footerAbove {
+    padding: 50px;
+    border-bottom: 1px solid black;
+}
+
+.footerLinks {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footerBottom h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.footerBottom li {
+    margin: 8px 0;
+}
+
+.socails {
+    margin: 10px 0;
+}
+
+.newsletterInput {
+    height: 45px;
+}
+
+.newsletterInput::placeholder {
+    padding-left: 10px;
+    opacity: 0.5;
+}
+
+.newsletterBtn {
+    width: 80px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+hr {
+    width: 80%;
+}
+
+.copyright {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
