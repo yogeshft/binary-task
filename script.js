@@ -95,8 +95,9 @@ function setClass(els, className, fnName) {
 }
 
 
-// footer
-
+/* **********************************************************************************
+                                    footer
+***********************************************************************************/
 // Function to toggle the visibility of footer links when header is clicked
 function toggleFooterLinks(headerElement) {
   const linksList = headerElement.nextElementSibling;
