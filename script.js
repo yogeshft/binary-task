@@ -94,3 +94,21 @@ function setClass(els, className, fnName) {
     }
 }
 
+
+// footer
+
+// Function to toggle the visibility of footer links when header is clicked
+function toggleFooterLinks(headerElement) {
+  const linksList = headerElement.nextElementSibling;
+  linksList.style.display =
+    linksList.style.display === 'none' ? 'block' : 'none';
+}
+
+// Attach click event listeners to each header element
+const footerHeadings = document.querySelectorAll('.footerHeading');
+footerHeadings.forEach((heading) => {
+  heading.addEventListener('click', () => {
+    toggleFooterLinks(heading);
+  });
+});
+

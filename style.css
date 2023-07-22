@@ -5,9 +5,6 @@
     font-family: 'Jost', sans-serif;
 }
 
-
-
-
 ul {
     list-style: none;
 }
@@ -84,9 +81,9 @@ nav {
     }
 }
 
-/* 
+/****************************************************************************************************************************************************************
     Section 1 
-*/
+**************************************************************************************************************************************************/
 
 .mySlides {
     display: none
@@ -437,61 +434,116 @@ div.panel.show {
 
 
 
-/* 
-    footer
-*/
+/****************************************************************************************************************************************
+                                                        footer
+*************************************************************************************************************************************/
+/* Common styles for all screen sizes */
 footer {
-    background-color: #FFFDEE;
-}
-
-.footerAbove {
+    background-color: #fffdee;
+  }
+  
+  .footerAbove {
     padding: 50px;
     border-bottom: 1px solid black;
-}
-
-.footerLinks {
+  }
+  
+  .footerLinks {
     margin: 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.footerBottom h2 {
+    text-align: center; /* Center align all the footer links */
+  }
+  
+  .footerBottom h2 {
     margin: 10px 0;
     font-size: 18px;
-}
-
-.footerBottom li {
+  }
+  
+  .footerBottom li {
     margin: 8px 0;
-}
-
-.socails {
+  }
+  
+  .socails {
     margin: 10px 0;
-}
-
-.newsletterInput {
+  }
+  
+  .newsletterInput {
     height: 45px;
-}
-
-.newsletterInput::placeholder {
+  }
+  
+  .newsletterInput::placeholder {
     padding-left: 10px;
     opacity: 0.5;
-}
-
-.newsletterBtn {
+  }
+  
+  .newsletterBtn {
     width: 80px;
     height: 45px;
     color: white;
     background-color: black;
     border: none;
-}
-
-hr {
+  }
+  
+  hr {
     width: 80%;
-}
-
-.copyright {
+  }
+  
+  /* Responsive styles using media queries */
+  @media screen and (max-width: 768px) {
+    .footerAbove {
+      padding: 30px;
+    }
+  
+    .footerLinks {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerLinks div {
+      width: 100%; /* Make each section take 100% width */
+    }
+  
+    .newsletterInput,
+    .newsletterBtn {
+      width: 100%; /* Make the input and button take 100% width */
+    }
+  }
+  
+  /* Styles for the copyright section */
+  .footerBottom {
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerBottom p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .payment {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-}
+  }
+  
+  .payment img {
+    margin: 0 5px;
+    height: 30px;
+  }
+  
+  /* Responsive styles for copyright section */
+  @media screen and (max-width: 768px) {
+    .footerBottom {
+      flex-direction: column;
+    }
+  
+    .payment {
+      margin-top: 10px;
+    }
+  }
+  
+  
