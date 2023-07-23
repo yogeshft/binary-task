@@ -1,129 +1,129 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .menuBtn {
-    display: none;
+  display: none;
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    background-color: white;
-    position: relative;
-    z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
 }
 
 .navUl,
 .btnUl,
 .productCat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hidden,
 .left-bar {
-    display: none !important;
+  display: none !important;
 }
 
 .btnUl {
-    gap: 20px !important;
+  gap: 20px !important;
 }
 
 .navUl>.navItem {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .dc {
-    background-color: #4F872E;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
+  background-color: #4F872E;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
 
-    .hidden {
-        display: block !important;
-    }
+  .hidden {
+      display: block !important;
+  }
 
-    .navUl {
-        flex-direction: column;
-        position: absolute;
-        top: 100px;
-        left: -1000px;
-        z-index: 1;
-        gap: 1rem;
-        margin: 2rem 0 0 2rem;
-        transition: left 0.3s ease;
-    }
+  .navUl {
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: -1000px;
+      z-index: 1;
+      gap: 1rem;
+      margin: 2rem 0 0 2rem;
+      transition: left 0.3s ease;
+  }
 
-    .left-bar {
-        display: block !important;
-        width: 20rem;
-        height: 90vh;
-        z-index: 1;
-        background-color: white;
-        top: 100px;
-        left: -1000px;
-        position: absolute;
-        transition: left 0.3s ease;
-    }
+  .left-bar {
+      display: block !important;
+      width: 20rem;
+      height: 90vh;
+      z-index: 1;
+      background-color: white;
+      top: 100px;
+      left: -1000px;
+      position: absolute;
+      transition: left 0.3s ease;
+  }
 }
 
 /****************************************************************************************************************************************************************
-    Section 1 ----- slider images
+  Section 1 ----- slider images
 **************************************************************************************************************************************************/
 .slideshow-container {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
+position: relative;
+width: 100%;
+height: 80vh;
+overflow: hidden;
 }
 
 .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 1s ease-in-out;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 .bullet-buttons {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .bullet {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #bbb;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+display: inline-block;
+width: 12px;
+height: 12px;
+background-color: #bbb;
+border-radius: 50%;
+margin: 0 5px;
+cursor: pointer;
 }
 
 .bullet.active {
-  background-color: #717171;
+background-color: #717171;
 }
 
 
@@ -131,408 +131,408 @@ nav {
 
 
 /* *   ********************************************************************************
-                                Section 2
+                              Section 2
 *************************************************************************/
 
 
 .sec2 {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
 }
 
 .sec2Bg1 {
-    position: absolute;
-    left: -100px;
-    top: -20px;
+  position: absolute;
+  left: -100px;
+  top: -20px;
 }
 
 .sec2Bg2 {
-    height: 200px;
-    position: absolute;
-    right: -50px;
-    bottom: -20px;
+  height: 200px;
+  position: absolute;
+  right: -50px;
+  bottom: -20px;
 }
 
 .symContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* *****************************************************************************
-                                Section 3
+                              Section 3
 ******************************************************************************/
 
 .productCard:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 /* Common styles for all screen sizes */
 .sec3 {
-    /* ... (existing styles) ... */
-    
-    background-color: #FFFDEE;margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  /* ... (existing styles) ... */
   
-  .productCardCont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 20px;
-  }
-  
-  /* Common styles for all screen sizes */
-.productCard {
-    background-color: white;
-    width: 360px;
-    height: 55vh;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevent image stretching */
-    justify-content: space-between;
-  }
-  
-  .cardHeader img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .cardHeader {
-    position: relative;
-    overflow: hidden;
-    height: 65%;
-  }
-  
-  .cardTag1 {
-    position: absolute;
-    top: 0px;
-    /* left: 10px; */
-    background-color: #f4d1a8;
-    padding: 5px;
-    border-radius: 5px;
-    color: #222;
-    font-weight: bold;
-  }
-  
-  .cardTag2 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    background-color: #f4d1a8;
-    padding: 10px;
-    border-radius: 50%;
-  }
-  
-  .productTitle {
-    font-size: 16px;
-    text-align: center;
-    margin: 10px 0;
-    color: #222;
-  }
-  
-  .productInfo {
-    font-size: 14px;
-    margin: 10px 10px;
-    color: #777;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    text-align: center;
-  }
-  
-  .productReview {
-    font-size: 12px;
-    color: #777;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .productReview i {
-    color: #777;
-    margin-right: 2px;
-  }
-  
-  .productReview i:hover {
-    color: #ffc107; /* Yellow fill on hover */
-  }
-  
-  .cardFooter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
-    margin-top: 5px;
-  }
-  
-  .productPrice {
-    font-size: 16px;
-    color: #222;
-    font-weight: bold;
-  }
-  
-  .productPrice del {
-    color: #777;
-    margin-left: 8px;
-  }
-  
-  .viewDetailBtn {
-    color: white;
-    background-color: #4f872e;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .viewDetailBtn:hover {
-    background-color: #3a671f;
-  }
-  
-  .viewAllBtn {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .viewAllBtn button {
-    color: white;
-    background-color: #4f872e;
-    border: none;
-    padding: 10px 40px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  /* Responsive styles using media queries */
-  @media screen and (max-width: 768px) {
-    .productCardCont {
-      justify-content: center;
-    }
-  
-    .productCard {
-      width: 90%;
-    }
-  
-    .productCard img {
-      height: 100%;
-    }
-  }
-  
-/****************************************************************************************** 
-                                    collapse and expand
-****************************************************************************************/
-
-p.accordion {
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin-bottom:10px;
-    border-bottom: 1px solid black;
-}
-
-/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-p.accordion.active, p.accordion:hover {
-    background-color: #ddd;
-}
-
-/* Unicode character for "plus" sign (+) */
-p.accordion:after {
-    content: '\2795'; 
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-/* Unicode character for "minus" sign (-) */
-p.accordion.active:after {
-    content: "\2796"; 
-}
-
-/* Style the element that is used for the panel class */
-
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
-    opacity: 0;
-    margin-bottom:10px;
-}
-
-div.panel.show {
-    opacity: 1;
-    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
-}
-.container{
-    display: flex;
-}
-.img-div{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-.side-div{
-    width: 50%;
-    padding: 10%;
-    margin: auto;
-}
-
-@media (max-width: 800px) {
-    .container {
-      flex-direction: column;
-      margin-top: 5px;
-    }
-    .img-div, .side-div {
-      width: 100%;
-    }
-    .side-div {
-      padding: 5%;
-    }
-  }
-
-
-/****************************************************************************************************************************************
-                                 footer
-*************************************************************************************************************************************/
-footer {
-  background-color: #fffdee;
-}
-
-.footerAbove {
-  padding: 50px;
-  border-bottom: 1px solid black;
-}
-
-.footerLinks {
-  margin: 40px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-.categoryList li {
-  margin: 10px 0;
-  padding: 0 5px;
-  font-size: 14px;
-}
-
-.footerLinks div {
-  flex: 1;
-  max-width: 400px;
-}
-
-.footerBottom {
-  padding: 20px;
+  background-color: #FFFDEE;margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footerBottom p {
-  margin: 10px 0;
-  font-size: 14px;
-  color: #777;
+.productCardCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
-.payment {
-  display: flex;
-  align-items: center;
+/* Common styles for all screen sizes */
+.productCard {
+  background-color: white;
+  width: 360px;
+  height: 55vh;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent image stretching */
   justify-content: space-between;
 }
 
-.payment img {
-  margin: 0 5px;
-  height: 30px;
+.cardHeader img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
-.socails {
+.cardHeader {
+  position: relative;
+  overflow: hidden;
+  height: 65%;
+}
+
+.cardTag1 {
+  position: absolute;
+  top: 0px;
+  /* left: 10px; */
+  background-color: #f4d1a8;
+  padding: 5px;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+}
+
+.cardTag2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  background-color: #f4d1a8;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.productTitle {
+  font-size: 16px;
+  text-align: center;
   margin: 10px 0;
+  color: #222;
 }
 
-.newsletterForm {
+.productInfo {
+  font-size: 14px;
+  margin: 10px 10px;
+  color: #777;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.productReview {
+  font-size: 12px;
+  color: #777;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productReview i {
+  color: #777;
+  margin-right: 2px;
+}
+
+.productReview i:hover {
+  color: #ffc107; /* Yellow fill on hover */
+}
+
+.cardFooter {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-top: 5px;
 }
 
-.newsletterInput {
-  height: 45px;
-  flex: 1;
-  margin-right: 5px;
+.productPrice {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
 }
 
-.newsletterBtn {
-  width: 120px;
-  height: 45px;
+.productPrice del {
+  color: #777;
+  margin-left: 8px;
+}
+
+.viewDetailBtn {
   color: white;
-  background-color: black;
+  background-color: #4f872e;
   border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-hr {
-  width: 80%;
+.viewDetailBtn:hover {
+  background-color: #3a671f;
+}
+
+.viewAllBtn {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.viewAllBtn button {
+  color: white;
+  background-color: #4f872e;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* Responsive styles using media queries */
 @media screen and (max-width: 768px) {
-  .footerAbove {
-    padding: 30px;
-  }
-
-  .footerLinks {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footerLinks div {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .categoryList {
-    display: block;
-    animation: fadeIn 0.3s ease-in;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .newsletterInput,
-  .newsletterBtn {
-    width: 100%;
-  }
-  
-  .socails {
-    display: flex;
+  .productCardCont {
     justify-content: center;
   }
+
+  .productCard {
+    width: 90%;
+  }
+
+  .productCard img {
+    height: 100%;
+  }
+}
+
+/****************************************************************************************** 
+                                  collapse and expand
+****************************************************************************************/
+
+p.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom:10px;
+  border-bottom: 1px solid black;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+  background-color: #ddd;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+  content: '\2795'; 
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+  content: "\2796"; 
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom:10px;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+.container{
+  display: flex;
+}
+.img-div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.side-div{
+  width: 50%;
+  padding: 10%;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .img-div, .side-div {
+    width: 100%;
+  }
+  .side-div {
+    padding: 5%;
+  }
+}
+
+
+/****************************************************************************************************************************************
+                               footer
+*************************************************************************************************************************************/
+footer {
+background-color: #fffdee;
+}
+
+.footerAbove {
+padding: 50px;
+border-bottom: 1px solid black;
+}
+
+.footerLinks {
+margin: 40px 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+text-align: center;
+}
+
+.categoryList li {
+margin: 10px 0;
+padding: 0 5px;
+font-size: 14px;
+}
+
+.footerLinks div {
+flex: 1;
+max-width: 400px;
+}
+
+.footerBottom {
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footerBottom p {
+margin: 10px 0;
+font-size: 14px;
+color: #777;
+}
+
+.payment {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.payment img {
+margin: 0 5px;
+height: 30px;
+}
+
+.socails {
+margin: 10px 0;
+}
+
+.newsletterForm {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.newsletterInput {
+height: 45px;
+flex: 1;
+margin-right: 5px;
+}
+
+.newsletterBtn {
+width: 120px;
+height: 45px;
+color: white;
+background-color: black;
+border: none;
+}
+
+hr {
+width: 80%;
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+.footerAbove {
+  padding: 30px;
+}
+
+.footerLinks {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLinks div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.categoryList {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.newsletterInput,
+.newsletterBtn {
+  width: 100%;
+}
+
+.socails {
+  display: flex;
+  justify-content: center;
+}
 }
