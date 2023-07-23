@@ -62,36 +62,26 @@
                                    main
      ------------------------------------------------------------------->
     <main>
-      <section class="sec1">
-        <div class="slideshow-container">
-  
-          <div class="mySlides fade">
-            <img style="width: 100%;" src="images/bac.png">
-          </div>
-  
-          <div class="mySlides fade">
-            <img style="width: 100%;" src="images/bac.png">
-          </div>
-  
-          <div class="mySlides fade">
-            <img style="width: 100%;" src="images/bac.png">
-          </div>
-  
-  
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./images/bac.png" alt="Image 1">
         </div>
-        <br>
-  
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="slide">
+          <img src="./images/slider2.png" alt="Image 2">
         </div>
-      </section>
+        <div class="slide">
+          <img src="./images/bac.png" alt="Image 3">
+        </div>
+        <div class="bullet-buttons">
+          <span class="bullet" onclick="currentSlide(1)"></span>
+          <span class="bullet" onclick="currentSlide(2)"></span>
+          <span class="bullet" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
 
-
-
-
-
+    <!-- -------------------------------------------------------------------------------
+                                    featured products
+     ----------------------------------------------------------------------------------->
       <section class="sec3">
         <h1 class="sec3Heading">CHOOSE YOUR PRODUCT</h1>
         <ul class="productCat">
@@ -101,35 +91,14 @@
           <li class="productCatItem">Bath & Body</li>
         </ul>
         <div class="productCardCont">
-          <!-- <div class="productCard">
-            <div class="cardHeader">
-              <img src="./images/Group 13531.png" alt="Product 1" />
-              <p class="cardTag1">20% OFF</p>
-              <p class="cardTag2"><i class="fa-regular fa-heart"></i></p>
-            </div>
-            <h2 class="productTitle">Product 1 Title</h2>
-            <p class="productInfo">Product 1 Description</p>
-            <p class="productReview">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <span>45 Reviews</span>
-            </p>
-            <div class="cardFooter">
-              <p class="productPrice">₹ 3900.00 <del>₹5000.00</del></p>
-              <button class="viewDetailBtn">View Details</button>
-            </div>
-          </div> -->
           <div class="productCard">
             <div class="cardHeader">
-              <img src="./images/Group 13531.png" alt="Product 1" />
+              <img src="./images/featured-product.png" alt="Product 1" />
               <p class="cardTag1">20% OFF</p>
               <p class="cardTag2"><i class="fa-regular fa-heart"></i></p>
             </div>
             <h2 class="productTitle">Product 1 Title</h2>
-            <p class="productInfo">Product 1 Description</p>
+            <p class="productInfo">Reduces Inflammation, Invigorates Bowel Health</p>
             <p class="productReview">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -195,8 +164,10 @@
       </section>
 
 
-  </div>
-</div> 
+      
+
+  <!-- </div>
+</div>  -->
 
 <!---------------------------------------------------------------------------------------------
                                       collapse and expand
@@ -226,102 +197,90 @@
 <!-- -----------------------------------------------------------------------
                                  footer
  --------------------------------------------------------------------------->
-    <footer>
-      <div class="footerAbove">
-        <h1 class="footerHeading">BY CONCERN</h1>
-        <p>
-          Anorexia l Allergies l Anti-Aging l Anxiety & Depression l Appetite l
-          Bloating l Blood Pressure l Blood Sugar l Chemo Side-Effects l
-          Cholestrol l Cold & Cough l Constipation l Detox Diarrehea l Diabetes
-          l Digestive Health l Dysentery l Heart Health l Hypertension l Immune
-          Support l Insomnia l Irritable Bowel Syndrome (IBS) l Joint Pain l
-          Libido l Memory Mood l Motion Sickness l Neuro-Degenerative Disease l
-          Sexual Problem l Skin Disease l Post Delivery Complications l
-          Psoriasis l Sciatica Pain l Sleep l Stress l Urinary Tract Infection l
-          Viral Infections l Weight Management l Women's Health
-        </p>
+
+ <footer>
+  <div class="footerAbove">
+    <h1 class="footerHeading">BY CONCERN</h1>
+    <p>Anorexia l Allergies l Anti-Aging l Anxiety & Depression l Appetite l Bloating l Blood Pressure l Blood
+      Sugar l Chemo Side-Effects l Cholesterol l Cold & Cough l Constipation l Detox Diarrhea l Diabetes l
+      Digestive Health l Dysentery l Heart Health l Hypertension l Immune Support l Insomnia l Irritable Bowel
+      Syndrome (IBS) l Joint Pain l Libido l Memory Mood l Motion Sickness l Neuro-Degenerative Disease l Sexual
+      Problem l Skin Disease l Post Delivery Complications l Psoriasis l Sciatica Pain l Sleep l Stress l
+      Urinary Tract Infection l Viral Infections l Weight Management l Women's Health</p>
+  </div>
+  <div class="footerLinks">
+    <div class="PRODUCT-CATEGORY">
+      <h2>PRODUCT CATEGORY</h2>
+      <ul class="categoryList">
+        <li>Cannabis Infused Medicines</li>
+        <li>Dietary Supplements</li>
+        <li>Authentic Ayurveda</li>
+        <li>Immunity Boosters</li>
+        <li>Bath & Body</li>
+        <li>Best Seller</li>
+      </ul>
+    </div>
+
+    <div class="CUSTOMER-SUPPORT">
+      <h2>CUSTOMER SUPPORT</h2>
+      <ul class="categoryList">
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Shipping & Returns</li>
+        <li>Blogs</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+
+    <div class="KNOW-US">
+      <h2>KNOW US</h2>
+      <ul class="categoryList">
+        <li>Our story</li>
+        <li>About HempCann</li>
+        <li>Ethos</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+
+    <div class="NEWSLETTER">
+      <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+      <div class="newsletterForm">
+        <input class="newsletterInput" type="text" placeholder="Email Address" />
+        <button class="newsletterBtn">SIGN UP</button>
       </div>
-      <div class="footerBottom">
-        <div class="footerLinks">
-          <div>
-            <h2>PRODUCT CATAGEORY</h2>
-            <ul>
-              <li>Cannabis Infused Medicines</li>
-              <li>Dietary Supplements</li>
-              <li>Authentic Ayurveda</li>
-              <li>Immunity Boosters</li>
-              <li>Bath & Body</li>
-              <li>Best Seller</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2>CUSTOMER SUPPORT</h2>
-            <ul>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Shipping & Returns</li>
-              <li>Blogs</li>
-              <li>Contacts</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2>KNOW US</h2>
-            <ul>
-              <li>Our story</li>
-              <li>About HempCann</li>
-              <li>Ethos</li>
-              <li>FAQ</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-            <input
-              class="newsletterInput"
-              type="text"
-              placeholder="Email Address"
-            />
-            <button class="newsletterBtn">SIGN UP</button>
-            <div class="socails">
-              <img
-                src="./images/104458_facebook_social media_fb_social_icon.svg"
-                alt=""
-              />
-              <img
-                src="./images/5279123_tweet_twitter_twitter logo_icon.svg"
-                alt=""
-              />
-              <img
-                src="./images/5279112_camera_instagram_social media_instagram logo_icon.svg"
-                alt=""
-              />
-            </div>
-
-            <h2>CONTACT US</h2>
-            <ul>
-              <li>Office Hours: Mon-Sat, 9am to 6pm</li>
-              <li>Email: namaste@vediherbals.com</li>
-              <li>Call us on: +91-22-48931316</li>
-            </ul>
-          </div>
-        </div>
+      <div class="socails">
+        <img src="./images/104458_facebook_social media_fb_social_icon.svg" alt="" />
+        <img src="./images/5279123_tweet_twitter_twitter logo_icon.svg" alt="" />
+        <img src="./images/5279112_camera_instagram_social media_instagram logo_icon.svg" alt="" />
       </div>
-      <hr />
-      <div class="copyright">
-        <p>© 2023 vedi herbals, all rights reserved</p>
-        <div class="payment">
-          <img src="./images/Image 86.png" alt="" />
-          <img src="./images/Image 87.png" alt="" />
-          <img src="./images/Image 89.png" alt="" />
-          <img src="./images/Image 90.png" alt="" />
-        </div>
+      <div class="contact-us">
+        <h2>CONTACT US</h2>
+        <ul>
+          <li>Office Hours: Mon-Sat, 9am to 6pm</li>
+          <li>Email: namaste@vediherbals.com</li>
+          <li>Call us on: +91-22-48931316</li>
+        </ul>
       </div>
-    </footer>
+
+    </div>
+  </div>
+  <hr />
+  <div class="footerBottom">
+    <p>© 2023 vedi herbals, all rights reserved</p>
+    <div class="payment">
+      <img src="./images/Image 86.png" alt="" />
+      <img src="./images/Image 87.png" alt="" />
+      <img src="./images/Image 89.png" alt="" />
+      <img src="./images/Image 90.png" alt="" />
+    </div>
+
+  </div>
+</footer>
+
+
+
 
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/f543c45c17.js" crossorigin="anonymous"></script>
+    <script  src="https://kit.fontawesome.com/f543c45c17.js" crossorigin="anonymous"></script>
   </body>
 </html>

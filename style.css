@@ -82,110 +82,57 @@ nav {
 }
 
 /****************************************************************************************************************************************************************
-    Section 1 
+    Section 1 ----- slider images
 **************************************************************************************************************************************************/
-
-.mySlides {
-    display: none
-}
-
-.sec1Bg {
-    height: auto;
-    object-fit: cover;
-}
-
 .slideshow-container {
-    position: relative;
-    margin: auto;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
 }
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.bullet-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+.bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+.bullet.active {
+  background-color: #717171;
 }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
-@keyframes fade {
-    from {
-        opacity: .4
-    }
 
-    to {
-        opacity: 1
-    }
-}
-
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
-/* 
-    Section 2
-*/
+/* *   ********************************************************************************
+                                Section 2
+*************************************************************************/
 
 
 .sec2 {
@@ -228,6 +175,8 @@ nav {
 /* Common styles for all screen sizes */
 .sec3 {
     /* ... (existing styles) ... */
+    
+    background-color: #FFFDEE;margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,16 +192,18 @@ nav {
   /* Common styles for all screen sizes */
 .productCard {
     background-color: white;
-    width: 300px;
+    width: 360px;
+    height: 55vh;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Prevent image stretching */
+    justify-content: space-between;
   }
   
   .cardHeader img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
   }
@@ -260,12 +211,13 @@ nav {
   .cardHeader {
     position: relative;
     overflow: hidden;
+    height: 65%;
   }
   
   .cardTag1 {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    /* left: 10px; */
     background-color: #f4d1a8;
     padding: 5px;
     border-radius: 5px;
@@ -279,7 +231,7 @@ nav {
     right: 10px;
     color: #fff;
     background-color: #f4d1a8;
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
   }
   
@@ -292,8 +244,12 @@ nav {
   
   .productInfo {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px 10px;
     color: #777;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align: center;
   }
   
   .productReview {
@@ -317,6 +273,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 5px 10px;
+    margin-top: 5px;
   }
   
   .productPrice {
@@ -346,6 +303,7 @@ nav {
   .viewAllBtn {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 10px;
   }
   
   .viewAllBtn button {
@@ -368,7 +326,7 @@ nav {
     }
   
     .productCard img {
-      height: 180px;
+      height: 100%;
     }
   }
   
@@ -444,6 +402,7 @@ div.panel.show {
 @media (max-width: 800px) {
     .container {
       flex-direction: column;
+      margin-top: 5px;
     }
     .img-div, .side-div {
       width: 100%;
@@ -455,115 +414,125 @@ div.panel.show {
 
 
 /****************************************************************************************************************************************
-                                                        footer
+                                 footer
 *************************************************************************************************************************************/
-/* Common styles for all screen sizes */
 footer {
-    background-color: #fffdee;
-  }
-  
+  background-color: #fffdee;
+}
+
+.footerAbove {
+  padding: 50px;
+  border-bottom: 1px solid black;
+}
+
+.footerLinks {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.categoryList li {
+  margin: 10px 0;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.footerLinks div {
+  flex: 1;
+  max-width: 400px;
+}
+
+.footerBottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerBottom p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment img {
+  margin: 0 5px;
+  height: 30px;
+}
+
+.socails {
+  margin: 10px 0;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.newsletterInput {
+  height: 45px;
+  flex: 1;
+  margin-right: 5px;
+}
+
+.newsletterBtn {
+  width: 120px;
+  height: 45px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+hr {
+  width: 80%;
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
   .footerAbove {
-    padding: 50px;
-    border-bottom: 1px solid black;
+    padding: 30px;
   }
-  
+
   .footerLinks {
-    margin: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center; /* Center align all the footer links */
-  }
-  
-  .footerBottom h2 {
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  
-  .footerBottom li {
-    margin: 8px 0;
-  }
-  
-  .socails {
-    margin: 10px 0;
-  }
-  
-  .newsletterInput {
-    height: 45px;
-  }
-  
-  .newsletterInput::placeholder {
-    padding-left: 10px;
-    opacity: 0.5;
-  }
-  
-  .newsletterBtn {
-    width: 80px;
-    height: 45px;
-    color: white;
-    background-color: black;
-    border: none;
-  }
-  
-  hr {
-    width: 80%;
-  }
-  
-  /* Responsive styles using media queries */
-  @media screen and (max-width: 768px) {
-    .footerAbove {
-      padding: 30px;
-    }
-  
-    .footerLinks {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footerLinks div {
-      width: 100%; /* Make each section take 100% width */
-    }
-  
-    .newsletterInput,
-    .newsletterBtn {
-      width: 100%; /* Make the input and button take 100% width */
-    }
-  }
-  
-  /* Styles for the copyright section */
-  .footerBottom {
-    padding: 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  .footerBottom p {
-    margin: 10px 0;
-    font-size: 14px;
-    color: #777;
+
+  .footerLinks div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .categoryList {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .newsletterInput,
+  .newsletterBtn {
+    width: 100%;
   }
   
-  .payment {
+  .socails {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
-  
-  .payment img {
-    margin: 0 5px;
-    height: 30px;
-  }
-  
-  /* Responsive styles for copyright section */
-  @media screen and (max-width: 768px) {
-    .footerBottom {
-      flex-direction: column;
-    }
-  
-    .payment {
-      margin-top: 10px;
-    }
-  }
-  
-  
+}
