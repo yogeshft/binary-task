@@ -5,81 +5,139 @@
   font-family: 'Jost', sans-serif;
 }
 
+
+/* ********************************************************************
+                      nav-bar
+***********************************************************************/
 ul {
-  list-style: none;
+list-style: none;
 }
 
 .menuBtn {
-  display: none;
+display: none;
 }
 
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100px;
-  background-color: white;
-  position: relative;
-  z-index: 10;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 100px;
+background-color: white;
+position: relative;
+z-index: 10;
 }
 
 .navUl,
 .btnUl,
 .productCat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .hidden,
 .left-bar {
-  display: none !important;
+display: none !important;
 }
 
 .btnUl {
-  gap: 20px !important;
+gap: 20px !important;
 }
 
-.navUl>.navItem {
-  margin-right: 1rem;
+.navUl > .navItem {
+margin-right: 1rem;
+position: relative;
 }
 
 .dc {
-  background-color: #4F872E;
-  padding: 7px;
-  border: none;
-  border-radius: 5px;
+background-color: #4F872E;
+padding: 7px;
+border: none;
+border-radius: 5px;
 }
 
+/* Add styles for dropdowns */
+.navUl .dropdown {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: white;
+padding: 10px;
+border: 1px solid #ccc;
+z-index: 2;
+}
+
+.navUl .navItem:hover .dropdown {
+display: block;
+}
+
+/* Show the dropdown when the parent item is hovered in desktop view */
+@media screen and (min-width: 769px) {
+.navUl .navItem:hover .dropdown {
+  display: block;
+}
+}
+
+/* Mobile view adjustments */
 @media screen and (max-width: 768px) {
-
-  .hidden {
-      display: block !important;
-  }
-
-  .navUl {
-      flex-direction: column;
-      position: absolute;
-      top: 100px;
-      left: -1000px;
-      z-index: 1;
-      gap: 1rem;
-      margin: 2rem 0 0 2rem;
-      transition: left 0.3s ease;
-  }
-
-  .left-bar {
-      display: block !important;
-      width: 20rem;
-      height: 90vh;
-      z-index: 1;
-      background-color: white;
-      top: 100px;
-      left: -1000px;
-      position: absolute;
-      transition: left 0.3s ease;
-  }
+.menuBtn {
+  display: block;
 }
+
+.fa-times {
+  display: none;
+}
+
+.navUl {
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: -1000px;
+  z-index: 1;
+  gap: 1rem;
+  margin: 2rem 0 0 2rem;
+  transition: left 0.3s ease;
+  /* Add background color and padding to the mobile navigation container */
+  background-color: white;
+  padding: 20px;
+}
+
+.navUl .navItem .dropdown {
+  display: none;
+  position: static;
+  /* Adjust the mobile dropdown position */
+  left: 0;
+  top: 100%;
+}
+
+/* Show the dropdown when the parent item is clicked in mobile view */
+.navUl .navItem.show .dropdown {
+  display: block;
+}
+
+.left-bar {
+  display: block;
+  width: 20rem;
+  height: 90vh;
+  z-index: 1;
+  background-color: white;
+  top: 100px;
+  left: -1000px;
+  position: absolute;
+  transition: left 0.3s ease;
+}
+
+.navUl.show,
+.left-bar.show {
+  left: 0;
+}
+}
+
+
+
+
+
 
 /****************************************************************************************************************************************************************
   Section 1 ----- slider images
@@ -126,9 +184,48 @@ cursor: pointer;
 background-color: #717171;
 }
 
+/* ************************************************************************
+                  services and quality
+*******************************************************************/
 
+.services-list {
+display: flex;
+justify-content: space-evenly;
+margin: 15px;
+flex-wrap: wrap;
+}
 
+.service {
+text-align: center;
+padding: 20px;
+transition: transform 0.2s ease;
+}
 
+.service img {
+max-width: 100%;
+height: auto;
+}
+
+.service-text {
+color: #3a671f;
+font-weight: 550;
+}
+
+/* Hover effect */
+.service:hover {
+transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+.services-list {
+  flex-direction: column;
+}
+
+.service {
+  margin-bottom: 15px;
+}
+}
 
 /* *   ********************************************************************************
                               Section 2

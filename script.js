@@ -2,23 +2,44 @@
                                       navbar
 ***************************************************************************************/
 
-var hamburger = document.getElementsByClassName("hidden")[0];
-var navUl = document.getElementsByClassName("navUl")[0];
-var leftBar = document.getElementsByClassName("left-bar")[0];
+var menuBtn = document.querySelector(".menuBtn");
+var closeBtn = document.querySelector(".fa-times");
+var navUl = document.querySelector(".navUl");
+var leftBar = document.querySelector(".left-bar");
 
-hamburger.addEventListener("click", buttonClick);
+menuBtn.addEventListener("click", toggleNav);
 
-function buttonClick() {
-  if (navUl.style.left === "0px" && leftBar.style.left === "0px") {
-    // If the elements are already visible, hide them
-    navUl.style.left = "-1000px";
-    leftBar.style.left = "-1000px";
-  } else {
-    // If the elements are hidden, show them
-    navUl.style.left = "0px";
-    leftBar.style.left = "0px";
-  }
+function toggleNav() {
+  navUl.classList.toggle("show");
+  leftBar.classList.toggle("show");
 }
+
+closeBtn.addEventListener("click", toggleNav);
+
+// Handle dropdown click in mobile view
+var dropdownItems = document.querySelectorAll(".navItem");
+dropdownItems.forEach(function(item) {
+  item.addEventListener("click", function(event) {
+    if (window.innerWidth <= 768) {
+      var dropdown = this.querySelector(".dropdown");
+      if (dropdown) {
+        event.stopPropagation();
+        dropdown.classList.toggle("show");
+      }
+    }
+  });
+});
+
+// Close the dropdown when clicking anywhere outside
+document.addEventListener("click", function(event) {
+  if (!navUl.contains(event.target) && !menuBtn.contains(event.target)) {
+    navUl.classList.remove("show");
+    leftBar.classList.remove("show");
+  }
+});
+
+
+
 
 /************************************************************************************* *
                                       slider
@@ -60,7 +81,29 @@ function plusSlides(n) {
 
 setInterval(() => {
   plusSlides(1);
-}, 6000); // Change slide every 5 seconds
+}, 3000); // Change slide every 3 seconds
+
+
+/************************************************************************************* *
+                                      services
+***************************************************************************************/
+// Add animation on hover
+const services = document.querySelectorAll('.service');
+
+services.forEach(service => {
+  service.addEventListener('mouseover', () => {
+    service.style.transition = 'transform 0.3s ease';
+    service.style.transform = 'scale(1.1)';
+  });
+
+  service.addEventListener('mouseout', () => {
+    service.style.transition = 'transform 0.3s ease';
+    service.style.transform = 'scale(1)';
+  });
+});
+
+
+
 
 
 /************************************************************************************* *
